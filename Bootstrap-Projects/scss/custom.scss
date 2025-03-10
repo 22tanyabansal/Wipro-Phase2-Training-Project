@@ -1,0 +1,13 @@
+// Load Bootstrap’s core
+@use "node_modules/bootstrap/scss/functions";
+@use "node_modules/bootstrap/scss/variables" as *;
+@use "node_modules/bootstrap/scss/mixins" as *;
+
+// Override Bootstrap variables before loading Bootstrap
+$primary: #ff5733;
+$secondary: #1a1a1a;
+$body-bg: #f8f9fa;
+$font-family-base: "Arial, sans-serif";
+
+// Load Bootstrap
+@use "node_modules/bootstrap/scss/bootstrap" as *;
