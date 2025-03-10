@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Survey Form</h2>
+        <form action="/submit-survey" method="post">
+            <div class="mb-3">
+                <label class="form-label">How did you hear about us?</label><br>
+                <input type="radio" name="source" value="Friends" required> Friends<br>
+                <input type="radio" name="source" value="Social Media"> Social Media<br>
+                <input type="radio" name="source" value="Advertisement"> Advertisement<br>
+                <input type="radio" name="source" value="Other"> Other
+            </div>
+            <div class="mb-3">
+                <label class="form-label">What features do you like? (Select all that apply)</label><br>
+                <input type="checkbox" name="features" value="Ease of Use"> Ease of Use<br>
+                <input type="checkbox" name="features" value="Design"> Design<br>
+                <input type="checkbox" name="features" value="Performance"> Performance<br>
+                <input type="checkbox" name="features" value="Support"> Support
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Additional Comments</label>
+                <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

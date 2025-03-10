@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    
+    <div>
+        <label>ID:</label> 
+        <span th:text="${user.id}"></span>    
+    </div>
+    <div>
+        <label>Name:</label> 
+        <span th:text="${user.name}"></span>
+    </div>
+    <div>
+        <label>Salary:</label> 
+        <span th:text="${user.salary}"></span>
+    </div>
+    <div>
+        <label>Designation:</label> 
+        <span th:text="${user.designation}"></span>
+    </div>
+    <div>
+        <a th:href="@{/users/edit/{id}(id=${user.id})}">Edit</a> |
+        <a href="/users">Back to List</a>
+    </div>
+</body>
+</html>
